@@ -45,6 +45,20 @@ UA = "OxygenNotIncluded"
 TICKET_SIZE = 0x800
 
 
+def _ensure_utf8():
+    """GBK 控制台下兜底：stdout/stderr 强制 UTF-8，emoji/中文不再报 UnicodeEncodeError。"""
+    for _stream in (sys.stdout, sys.stderr):
+        _rc = getattr(_stream, "reconfigure", None)
+        if _rc is not None:
+            try:
+                _rc(encoding="utf-8", errors="replace")
+            except Exception:
+                pass
+
+
+_ensure_utf8()
+
+
 def default_steam_dll():
     """自动定位 ONI 自带的 steam_api64.dll（向上查找游戏根目录布局）。"""
     here = os.path.dirname(os.path.abspath(__file__))

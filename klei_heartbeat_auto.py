@@ -110,7 +110,7 @@ def main():
     fam = 1                       # 第几轮心跳
     while True:
         since = int(time.time() - born)
-        HB.log("── 第 %d 轮心跳（登录后 %s）──" % (fam, time.strftime("%H:%M:%S", time.gmtime(since)), logfile))
+        HB.log("── 第 %d 轮心跳（登录后 %s）──" % (fam, time.strftime("%H:%M:%S", time.gmtime(since))))
 
         # ---- 心跳 ----
         st, j, raw = HB.tick(token)
