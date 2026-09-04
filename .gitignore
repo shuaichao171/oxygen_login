@@ -1,0 +1,14 @@
+# credentials/  — 运行时凭证与日志（绝不要提交！）
+credentials/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 临时 Steam appid 标记 / 杂项
+steam_appid.txt
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
