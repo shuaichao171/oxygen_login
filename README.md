@@ -1,4 +1,4 @@
-# klei_login (ONI) — 不开游戏登缺氧 + 挂机心跳领游玩礼物
+# oxygen_login (ONI) — 不开游戏登缺氧 + 挂机心跳领游玩礼物
 
 > **目标项目**：`OxygenNotIncluded.exe`（缺氧，Unity 6.0.35f2 Mono 版）+ Klei 服务端
 > 通过**反编译托管侧源码**（`Assembly-CSharp-firstpass/KleiAccount.cs`、`KleiItems.cs`、
@@ -12,7 +12,7 @@
 ## 1. 快速开始
 
 ```bat
-cd Oxygen_login\klei_login
+cd oxygen_login
 :: 方式一：常驻黑窗口（推荐，登录一次后挂机）
 双击「心跳自动领取.bat」
 
